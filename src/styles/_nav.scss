@@ -1,0 +1,23 @@
+.nav {
+  height: 5.6rem;
+  background-color: rgb($darkblue, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $coolwhite;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+
+    &--item {
+      font-size: 1.6rem;
+      color: $coolwhite;
+    }
+  }
+}
