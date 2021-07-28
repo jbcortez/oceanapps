@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <div>
       <Nav />
-      <h1>Welcome to OceanApps</h1>
+      <p>Welcome to OceanApps</p>
     </div>
   );
 };

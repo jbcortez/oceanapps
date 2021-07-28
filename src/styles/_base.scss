@@ -1,5 +1,9 @@
-@import url(); // Import fonts here
-@import url(); // Import fonts here
+@font-face {
+  font-family: 'LeagueSpartan';
+  font-weight: bold;
+  src: url('../fonts/LeagueSpartan.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 $darkteal: #044d57;
 $teal: #0e8993;
@@ -19,4 +23,9 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2rem;
 }
