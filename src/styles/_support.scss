@@ -1,0 +1,41 @@
+.support {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+
+  &__title {
+    font-size: 3.2rem;
+    color: $coolwhite;
+    padding-bottom: 4rem;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .support {
+    padding: 10rem 2rem;
+    &__title {
+      font-size: 4.8rem;
+    }
+
+    &__btn {
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .support {
+    padding: 13rem 0;
+    &__title {
+      font-size: 6rem;
+    }
+
+    &__btn {
+    }
+  }
+}

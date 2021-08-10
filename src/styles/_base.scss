@@ -3,18 +3,41 @@
   font-weight: bold;
   src: url('../fonts/LeagueSpartan.otf');
 }
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2021 Colophon Foundry
+ *
+ * Licenced to Justin Cortez OceanApps
+ */
+
+@font-face {
+  font-family: 'mabry-regular';
+  src: url('../fonts/mabry-regular.woff2') format('woff2');
+
+  font-weight: normal;
+  font-style: normal;
+}
 
 $darkteal: #044d57;
 $teal: #0e8993;
 $turqoise: #a2f8fe;
 $lightpink: #eedfde;
+$pink: #fbbebe;
 $tan: #f6efe7;
 $coolwhite: #f5fdfe;
 $darkblue: #000d30;
+$extradarkblue: #000a23;
 
 html {
   font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
 }
 
 *,
@@ -26,6 +49,105 @@ html {
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'mabry-regular', sans-serif;
   font-size: 2rem;
+  z-index: -2; // This is so ::before/after elements can use a negative z-index
+  color: $coolwhite;
+  background-color: $darkblue;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 6.4rem;
+  color: $coolwhite;
+  font-family: 'LeagueSpartan';
+}
+
+h3 {
+  font-size: 4.8rem;
+  color: $turqoise;
+  font-family: 'LeagueSpartan';
+}
+
+h6 {
+  font-size: 2.4rem;
+  color: $darkteal;
+  font-family: 'LeagueSpartan';
+}
+
+.bg-container {
+  background-image: linear-gradient(rgba(0, 13, 4, 0.5), #000d30 60%),
+    url(../images/oceanbg.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150rem;
+}
+
+.btn {
+  font-family: 'mabry-regular', sans-serif;
+  width: 14.2rem;
+  height: 4rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  backface-visibility: hidden;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn-primary {
+  background-color: $turqoise;
+  color: $darkblue;
+}
+
+.btn-secondary {
+  background-color: rgb(0 0 0 / 0%);
+  color: $turqoise;
+  border: 2px solid $turqoise;
+}
+
+.turqoise {
+  color: $turqoise;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
 }

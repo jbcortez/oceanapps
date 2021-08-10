@@ -1,24 +1,164 @@
 .nav {
-  height: 5.6rem;
+  position: relative;
+  padding: 0 2rem;
+  height: 6rem;
   background-color: rgb($darkblue, 0.5);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.23), 0px 10px 20px rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
   &__logo {
-    font-size: 2.4rem;
-    font-family: 'LeagueSpartan', sans-serif;
-    font-weight: 700;
-    color: $coolwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'LeagueSpartan';
+
+    & img {
+      display: none;
+    }
+  }
+  &__hamburger-wrap {
+    height: 4rem;
+    width: 4rem;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 51;
+
+    // Middle Line
+    & span {
+      width: 80%;
+      height: 2px;
+      background-color: $coolwhite;
+      display: block;
+      position: relative;
+      border-radius: 5px;
+
+      &.open {
+        background-color: transparent;
+
+        &::before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+          top: 0;
+        }
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        width: 70%;
+        height: 2px;
+        background-color: $coolwhite;
+        position: absolute;
+        top: -8px;
+        left: 15%;
+        border-radius: 5px;
+      }
+
+      // Top Line
+      &::before {
+      }
+
+      // Bottom Line
+      &::after {
+        top: 8px;
+      }
+    }
   }
 
   &__menu {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $darkblue;
+    width: 100vw;
+    z-index: 50;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+
+    &.open {
+      transform: translateX(-100vw);
+    }
 
     &--item {
-      font-size: 1.6rem;
+      list-style: none;
+      padding: 1rem;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      font-weight: bold;
+
+      &:hover {
+        color: $turqoise;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .nav {
+    &__container {
+      width: 114rem;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      & img {
+        display: block;
+        width: 8rem;
+        padding-right: 1rem;
+      }
+    }
+
+    &__hamburger-wrap {
+      display: none;
+    }
+
+    &__menu {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
       color: $coolwhite;
+      font-size: 1.6rem;
+      width: fit-content;
+      height: 3rem;
+      background-color: transparent;
+      top: 0;
+      right: 0;
+      padding: 0;
+
+      &--item {
+        padding: 0;
+
+        &:not(:last-child) {
+          padding-right: 3rem;
+        }
+      }
+
+      &.open {
+        transform: translateX(0);
+      }
     }
   }
 }

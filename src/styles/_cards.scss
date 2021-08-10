@@ -1,0 +1,90 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+
+  &__card {
+    height: 45rem;
+    width: 33rem;
+    background-color: $coolwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4rem;
+
+    &--title {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    &--text {
+      font-size: 1.6rem;
+      color: $darkblue;
+      line-height: 149.9%;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    padding: 10rem 5rem;
+
+    &__card {
+      width: 80vw;
+
+      &--title {
+        font-size: 3.2rem;
+      }
+
+      &--illustration {
+        width: 25rem;
+      }
+
+      &--text {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .cards {
+    padding: 13rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__card {
+      width: 34rem;
+      height: 45rem;
+      box-shadow: rgba(93, 101, 206, 0.19) 0px 10px 20px,
+        rgba(96, 103, 202, 0.23) 0px 6px 6px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &--title {
+        font-size: 2.4rem;
+        text-align: center;
+      }
+
+      &--illustration {
+        width: 19rem;
+      }
+
+      &--text {
+        font-size: 2rem;
+        line-height: unset;
+        text-align: center;
+      }
+    }
+  }
+}

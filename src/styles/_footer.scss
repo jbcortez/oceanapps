@@ -1,0 +1,43 @@
+.footer {
+  padding: 0 2rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $extradarkblue;
+
+  &__logo {
+    width: 20rem;
+    padding-bottom: 3rem;
+    cursor: pointer;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+
+    &--item {
+      list-style: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $turqoise;
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+  }
+}

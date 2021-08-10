@@ -1,0 +1,301 @@
+.demo {
+  &__layout {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $coolwhite;
+
+    &--card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &--title {
+      color: $darkblue;
+      font-size: 3.2rem;
+      padding-bottom: 1rem;
+    }
+    &--text {
+      color: $darkblue;
+      font-size: 1.6rem;
+      padding-bottom: 3rem;
+    }
+    &--card {
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__event {
+    padding: 5rem 2rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkblue;
+
+    &--card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--title {
+      font-size: 3.2rem;
+      color: $coolwhite;
+      padding-bottom: 1rem;
+    }
+    &--text {
+      color: $coolwhite;
+      font-size: 1.6rem;
+      line-height: 149.9%;
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+    &--card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--number {
+        font-size: 3.2rem;
+        font-family: 'LeagueSpartan';
+        color: $coolwhite;
+        padding-bottom: 1rem;
+      }
+
+      &--icon {
+        width: 15rem;
+        padding-bottom: 1rem;
+      }
+      &--text {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $coolwhite;
+      }
+      &--description {
+        color: $coolwhite;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        line-height: 149.9%;
+        width: 35rem;
+      }
+      &--line {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+
+    position: relative;
+
+    &--arrow-aug {
+      position: absolute;
+      top: 4rem;
+      left: 0;
+    }
+    &--arrow-sept {
+      position: absolute;
+      top: 73rem;
+      left: 0;
+
+      @media screen and (min-width: 402px) {
+        top: 70.5rem;
+      }
+      @media screen and (min-width: 484px) {
+        top: 68.5rem;
+      }
+      @media screen and (min-width: 560px) {
+        top: 66rem;
+      }
+      @media screen and (min-width: 704px) {
+        top: 64rem;
+      }
+      @media screen and (min-width: 980px) {
+        top: 61.5rem;
+      }
+    }
+
+    &--card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $coolwhite;
+      padding: 5rem 3rem;
+      border-radius: 5px;
+      margin: 5rem 0;
+
+      &--title {
+        font-size: 3.2rem;
+        color: #242424;
+        font-family: 'LeagueSpartan';
+        padding-bottom: 2.5rem;
+        text-align: center;
+      }
+      &--image {
+        width: 26rem;
+        border-radius: 5px;
+        margin-bottom: 2.5rem;
+      }
+      &--text {
+        color: #242424;
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 2.5rem;
+        line-height: 149.9%;
+      }
+      &--button {
+        background-color: #242424;
+        color: $coolwhite;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border: none;
+        padding: 1.2rem 3rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .demo {
+    &__layout {
+      padding: 10rem 5rem;
+      &--title {
+        font-size: 4rem;
+      }
+      &--text {
+        font-size: 2rem;
+      }
+    }
+
+    &__event {
+      padding: 10rem 5rem;
+      &--title {
+        font-size: 4rem;
+      }
+      &--text {
+        font-size: 2rem;
+        width: 60rem;
+      }
+      &--card {
+        &--description {
+          font-size: 2.4rem;
+          width: 32rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1140px) {
+  .demo {
+    &__layout {
+      &--card {
+        position: relative;
+        &:not(:last-child) {
+          margin-bottom: 0;
+          margin-right: 2rem;
+        }
+      }
+      &--card-container {
+        flex-direction: row;
+      }
+    }
+
+    &__event {
+      &--text {
+        width: 65rem;
+      }
+      &--card-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        width: 114rem;
+      }
+      &--card {
+        &--description {
+          font-size: 2rem;
+          width: 25rem;
+        }
+        &--line.one {
+          position: absolute;
+          left: 22rem;
+          top: 7rem;
+        }
+        &--line.two {
+          position: absolute;
+          top: 7rem;
+          left: 51.5rem;
+        }
+        &--line.three {
+          position: absolute;
+          top: 7rem;
+          left: 81.5rem;
+        }
+      }
+    }
+
+    &__example {
+      &--arrow-aug {
+        left: -3rem;
+        top: 5rem;
+      }
+      &--arrow-sept {
+        left: -3rem;
+        top: 53rem;
+      }
+      &--card {
+        flex-direction: row;
+        padding: 5rem;
+        &--right-col {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        &--left-col {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+        }
+        &--image {
+          width: 42rem;
+          margin: 0;
+          margin-right: 5rem;
+        }
+
+        &--title {
+          font-size: 4.8rem;
+          padding-bottom: 1rem;
+        }
+        &--text {
+          text-align: left;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
