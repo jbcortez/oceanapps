@@ -11,8 +11,8 @@ const Footer = () => {
         spy={true}
         smooth={true}
         hashSpy={true}
-        offset={-75}
-        duration={500}
+        offset={0}
+        duration={1000}
         delay={0}
         isDynamic={true}
         // onSetActive={this.handleSetActive}
@@ -29,8 +29,8 @@ const Footer = () => {
             spy={true}
             smooth={true}
             hashSpy={true}
-            offset={-75}
-            duration={500}
+            offset={0}
+            duration={1000}
             delay={0}
             isDynamic={true}
             // onSetActive={this.handleSetActive}
@@ -46,8 +46,8 @@ const Footer = () => {
             spy={true}
             smooth={true}
             hashSpy={true}
-            offset={-75}
-            duration={500}
+            offset={0}
+            duration={1000}
             delay={0}
             isDynamic={true}
             // onSetActive={this.handleSetActive}
@@ -63,8 +63,8 @@ const Footer = () => {
             spy={true}
             smooth={true}
             hashSpy={true}
-            offset={-75}
-            duration={500}
+            offset={0}
+            duration={1000}
             delay={0}
             isDynamic={true}
             // onSetActive={this.handleSetActive}

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Icon from '../images/icon.svg';
 import { Link } from 'react-scroll';
 
-const Nav = () => {
+const Nav = ({ matches }) => {
   const [open, setOpen] = useState(false);
   const menu = useRef(null);
   const hamburger = useRef(null);
@@ -11,9 +11,11 @@ const Nav = () => {
     if (open) {
       hamburger.current.classList.add('open');
       menu.current.classList.add('open');
+      document.body.style.overflow = 'hidden';
     } else {
       hamburger.current.classList.remove('open');
       menu.current.classList.remove('open');
+      document.body.style.overflow = 'auto';
     }
   }, [open]);
 
@@ -30,14 +32,15 @@ const Nav = () => {
         <ul className='nav__menu' ref={menu}>
           <li className='nav__menu--item'>
             <Link
+              onClick={() => setOpen(false)}
               activeClass='active'
               to='products'
               spy={true}
               smooth={true}
               hashSpy={true}
-              offset={-75}
-              duration={500}
-              delay={0}
+              offset={0}
+              duration={1000}
+              delay={matches ? 0 : 400}
               isDynamic={true}
               // onSetActive={this.handleSetActive}
               // onSetInactive={this.handleSetInactive}
@@ -47,14 +50,15 @@ const Nav = () => {
           </li>
           <li className='nav__menu--item'>
             <Link
+              onClick={() => setOpen(false)}
               activeClass='active'
               to='about'
               spy={true}
               smooth={true}
               hashSpy={true}
-              offset={-75}
-              duration={500}
-              delay={0}
+              offset={0}
+              duration={1000}
+              delay={matches ? 0 : 400}
               isDynamic={true}
               // onSetActive={this.handleSetActive}
               // onSetInactive={this.handleSetInactive}
@@ -64,14 +68,15 @@ const Nav = () => {
           </li>
           <li className='nav__menu--item'>
             <Link
+              onClick={() => setOpen(false)}
               activeClass='active'
               to='support'
               spy={true}
               smooth={true}
               hashSpy={true}
-              offset={-75}
-              duration={500}
-              delay={0}
+              offset={0}
+              duration={1000}
+              delay={matches ? 0 : 400}
               isDynamic={true}
               // onSetActive={this.handleSetActive}
               // onSetInactive={this.handleSetInactive}

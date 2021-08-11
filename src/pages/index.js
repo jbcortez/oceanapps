@@ -18,7 +18,7 @@ const Index = () => {
     <AppProvider>
       <div>
         <div className='bg-container'>
-          <Nav />
+          <Nav matches={matches} />
           <main>
             <Hero matches={matches} />
             <Products matches={matches} />
