@@ -73,10 +73,15 @@ const Footer = () => {
             Contact
           </Link>
         </li>
+        <li className='footer__menu--item'>
+          <a href='https://www.iubenda.com/privacy-policy/14786249/legal'>
+            Privacy Policy
+          </a>
+        </li>
       </ul>
 
       <div className='footer__copyright align-center'>
-        OceanApps LLC &copy; 2021 All rights reserved
+        Ocean Apps LLC &copy; 2021 All rights reserved
       </div>
     </footer>
   );

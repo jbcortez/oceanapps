@@ -14,17 +14,17 @@ const Products = ({ matches }) => {
             />
           </div>
           <div className='products__right-col'>
-            <h3 className='products__headline'>Easy Automation App</h3>
+            <h3 className='products__headline'>Content Scheduler</h3>
             <p className='products__text products__text--1'>
-              We know you’re busy, our Easy Automation app allows you to create
+              We know you’re busy, our Content Scheduler allows you to create
               engaging campaigns and set the start and end time so your page
               updates automatically when your campaign is over.
             </p>
             <p className='products__text products__text--2'>
-              Easy Automation App gives you total control over your timing and
+              Content Scheduler gives you total control over your timing and
               allows you to make multiple campaigns at once. You can even
-              schedule your alerts so they run anytime you choose. Your page
-              will then update automatically at the at the set time, adding,
+              schedule your content changes so they run anytime you choose. Your
+              page will then update automatically at the set time, adding,
               removing or replacing your campaign according to your
               specifications.
             </p>
@@ -32,7 +32,7 @@ const Products = ({ matches }) => {
         </>
       ) : (
         <>
-          <h3 className='products__headline'>Easy Automation App</h3>
+          <h3 className='products__headline'>Content Scheduler</h3>
           <div className='products__illustration'>
             <img
               src={ProductsIllustration}
@@ -41,15 +41,15 @@ const Products = ({ matches }) => {
           </div>
 
           <p className='products__text products__text--1'>
-            We know you’re busy, our Easy Automation app allows you to create
+            We know you’re busy, our Content Scheduler allows you to create
             engaging campaigns and set the start and end time so your page
             updates automatically when your campaign is over.
           </p>
           <p className='products__text products__text--2'>
-            Easy Automation App gives you total control over your timing and
+            Content Scheduler gives you total control over your timing and
             allows you to make multiple campaigns at once. You can even schedule
-            your alerts so they run anytime you choose. Your page will then
-            update automatically at the at the set time, adding, removing or
+            your content changes so they run anytime you choose. Your page will
+            then update automatically at the set time, adding, removing or
             replacing your campaign according to your specifications.
           </p>
         </>

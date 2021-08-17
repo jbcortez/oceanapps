@@ -10,8 +10,9 @@ const About = ({ matches }) => {
             <h3 className='about__title'>Our Story</h3>
             <p className='about__text--1'>
               We are a husband and wife team in Santa Cruz, California. We’re
-              using our 15 years of experience in business automation, software
-              development, and customer service to make keeping your website
+              combining our experience working with global technology companies
+              and local small businesses to bring scalable best practices to
+              small teams everywhere. Our goal is to make keeping your website
               up-to date as easy as possible so you can get back to do the
               things that matter most to you.
             </p>
