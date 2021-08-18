@@ -37,7 +37,7 @@ const Demo = ({ matches }) => {
         </div>
       </div>
       <div className='demo__event container'>
-        <h3 className='demo__event--title'>Create An Event</h3>
+        <h3 className='demo__event--title'>Create A Campaign Event</h3>
         <p className='demo__event--text'>
           We call our automatic content changes Events. Create as many or as few
           Events as you like, and schedule your content to change dynamically at
