@@ -14,15 +14,15 @@ const Products = ({ matches }) => {
             />
           </div>
           <div className='products__right-col'>
-            <h3 className='products__headline'>Content Scheduler</h3>
+            <h3 className='products__headline'>Action Alert Scheduler</h3>
             <p className='products__text products__text--1'>
-              We know you’re busy, our Content Scheduler allows you to create
-              engaging campaigns and set the start and end time so your page
-              updates automatically when your campaign is over.
+              We know you’re busy, our Action Alert Scheduler allows you to
+              create engaging campaigns and set the start and end time so your
+              page updates automatically when your campaign is over.
             </p>
             <p className='products__text products__text--2'>
-              Content Scheduler gives you total control over your timing and
-              allows you to make multiple campaigns at once. You can even
+              Action Alert Scheduler gives you total control over your timing
+              and allows you to make multiple campaigns at once. You can even
               schedule your content changes so they run anytime you choose. Your
               page will then update automatically at the set time, adding,
               removing or replacing your campaign according to your
