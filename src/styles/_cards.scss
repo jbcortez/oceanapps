@@ -20,15 +20,21 @@
       text-align: center;
     }
 
-    &:not(:last-child) {
-      margin-bottom: 3rem;
-    }
-
     &--text {
       font-size: 1.6rem;
       color: $darkblue;
       line-height: 149.9%;
       text-align: justify;
+    }
+
+    &--1 {
+      margin-bottom: 3rem;
+    }
+    &--2 {
+      margin-bottom: 3rem;
+    }
+    &--3 {
+      margin-bottom: 3rem;
     }
   }
 }
@@ -60,30 +66,57 @@
     padding: 13rem 0;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &__card {
-      width: 34rem;
-      height: 45rem;
+      width: 56rem;
+      height: 27rem;
+      padding: 3rem;
+      flex-direction: row;
+
       box-shadow: rgba(93, 101, 206, 0.19) 0px 10px 20px,
         rgba(96, 103, 202, 0.23) 0px 6px 6px;
 
-      &:not(:last-child) {
+      &--1 {
+        order: 0;
+        margin-bottom: 2rem;
+      }
+      &--2 {
+        order: 1;
+        margin-bottom: 2rem;
+      }
+      &--3 {
+        order: 2;
         margin-bottom: 0;
+      }
+      &--4 {
+        order: 3;
+      }
+
+      &--left-col {
+        margin-right: 3rem;
+      }
+      &--right-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
 
       &--title {
         font-size: 2.4rem;
-        text-align: center;
+        text-align: left;
+        padding-bottom: 1.1rem;
       }
 
       &--illustration {
-        width: 19rem;
+        width: 20rem;
       }
 
       &--text {
         font-size: 2rem;
         line-height: unset;
-        text-align: center;
+        text-align: left;
       }
     }
   }

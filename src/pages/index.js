@@ -22,7 +22,7 @@ const Index = () => {
           <main>
             <Hero matches={matches} />
             <Products matches={matches} />
-            <Cards />
+            <Cards matches={matches} />
             <Demo matches={matches} />
             <About matches={matches} />
             <Support />
