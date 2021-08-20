@@ -22,8 +22,8 @@ const About = ({ matches }) => {
               planet.
               <span className='turqoise'>
                 {' '}
-                10% of our profits are donated to organizations that work
-                towards ocean and habitat conservation every quarter.
+                A percentage of our profits is donated to organizations that
+                work towards ocean and habitat conservation every quarter.
               </span>
             </p>
           </div>
@@ -50,8 +50,8 @@ const About = ({ matches }) => {
             We’re passionate about giving back to our community and the planet.
             <span className='turqoise'>
               {' '}
-              10% of our profits are donated to organizations that work towards
-              ocean and habitat conservation every quarter.
+              A percentage of our profits is donated to organizations that work
+              towards ocean and habitat conservation every quarter.
             </span>
           </p>
           <div className='about__illustration'>
