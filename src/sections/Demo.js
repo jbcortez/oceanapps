@@ -128,7 +128,7 @@ const Demo = ({ matches }) => {
               className='demo__event--card--icon'
             />
             <span className='demo__event--card--description'>
-              Your CTA will now change automatically at the scheduled time
+              Your CTA will now display automatically at the scheduled time
             </span>
           </div>
         </div>

@@ -16,16 +16,11 @@ const Products = ({ matches }) => {
           <div className='products__right-col'>
             <h3 className='products__headline'>Call-To-Action Scheduler</h3>
             <p className='products__text products__text--1'>
-              We know you’re busy, our CTA Scheduler allows you to create
-              engaging campaigns and set the start and end time so your page
-              updates automatically when your campaign is over.
-            </p>
-            <p className='products__text products__text--2'>
-              CTA Scheduler gives you total control over your timing and allows
-              you to make multiple campaigns at once. You can even schedule your
-              content changes so they run anytime you choose. Your page will
-              then update automatically at the set time, changing your campaign
-              according to your specifications.
+              We know you’re busy, our CTA Scheduler allows you to display a
+              featured CTA according to your schedule. Create multiple CTAs and
+              set the start and end times, so your page updates automatically as
+              your campaigns change. Get back to doing business as your website
+              is automatically kept up to date with CTA Scheduler.
             </p>
           </div>
         </>
@@ -40,16 +35,11 @@ const Products = ({ matches }) => {
           </div>
 
           <p className='products__text products__text--1'>
-            We know you’re busy, our CTA Scheduler allows you to create engaging
-            campaigns and set the start and end time so your page updates
-            automatically when your campaign is over.
-          </p>
-          <p className='products__text products__text--2'>
-            CTA Scheduler gives you total control over your timing and allows
-            you to make multiple campaigns at once. You can even schedule your
-            content changes so they run anytime you choose. Your page will then
-            update automatically at the set time, changing your campaign
-            according to your specifications.
+            We know you’re busy, our CTA Scheduler allows you to display a
+            featured CTA according to your schedule. Create multiple CTAs and
+            set the start and end times, so your page updates automatically as
+            your campaigns change. Get back to doing business as your website is
+            automatically kept up to date with CTA Scheduler.
           </p>
         </>
       )}
