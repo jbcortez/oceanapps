@@ -37,11 +37,10 @@ const Demo = ({ matches }) => {
         </div>
       </div>
       <div className='demo__event container'>
-        <h3 className='demo__event--title'>Create A Campaign Event</h3>
+        <h3 className='demo__event--title'>Schedule A Call-To-Action</h3>
         <p className='demo__event--text'>
-          We call our automatic content changes Events. Create as many or as few
-          Events as you like, and schedule your content to change dynamically at
-          any time of your choosing.
+          Create as many CTAs as you like, and schedule them to change
+          dynamically any time of your choosing.
         </p>
         <div className='demo__event--card-container'>
           {matches && (
@@ -73,7 +72,7 @@ const Demo = ({ matches }) => {
               className='demo__event--card--icon'
             />
             <span className='demo__event--card--description'>
-              Create An Event
+              Create a new CTA
             </span>
             {!matches && (
               <img
@@ -91,7 +90,7 @@ const Demo = ({ matches }) => {
               className='demo__event--card--icon'
             />
             <span className='demo__event--card--description'>
-              Configure Content Changes
+              Design your CTA using our design tool
             </span>
             {!matches && (
               <img
@@ -111,7 +110,7 @@ const Demo = ({ matches }) => {
             />
 
             <span className='demo__event--card--description'>
-              Select The Date And Time For Your Event To Trigger
+              Select the date and time for your new CTA to appear
             </span>
             {!matches && (
               <img
@@ -129,7 +128,7 @@ const Demo = ({ matches }) => {
               className='demo__event--card--icon'
             />
             <span className='demo__event--card--description'>
-              Your Content Will Now Change Automatically At The Scheduled Time
+              Your CTA will now change automatically at the scheduled time
             </span>
           </div>
         </div>

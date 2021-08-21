@@ -14,7 +14,7 @@ const Products = ({ matches }) => {
             />
           </div>
           <div className='products__right-col'>
-            <h3 className='products__headline'>CTA Scheduler</h3>
+            <h3 className='products__headline'>Call-To-Action Scheduler</h3>
             <p className='products__text products__text--1'>
               We know you’re busy, our CTA Scheduler allows you to create
               engaging campaigns and set the start and end time so your page
@@ -31,7 +31,7 @@ const Products = ({ matches }) => {
         </>
       ) : (
         <>
-          <h3 className='products__headline'>CTA Scheduler</h3>
+          <h3 className='products__headline'>Call-To-Action Scheduler</h3>
           <div className='products__illustration'>
             <img
               src={ProductsIllustration}
